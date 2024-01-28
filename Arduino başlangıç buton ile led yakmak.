@@ -1,0 +1,17 @@
+void setup() {
+  pinMode(2,OUTPUT); //2. pin e led bağladık.
+  pinMode(3,INPUT);  //2. pin e buton bağladık.
+}
+
+void loop() {
+  int durum = 0;           //int basitçe bir keyword atamamızı sağlar.
+  durum = digitalRead(3);  //Burada kısaca buton durumu nun 1 veya 0 olmasına bakıyoruz.
+
+  if (durum == 1){         //if-else komutları kısaca belirli bir durumda ne olucağını belirlememizi sağlar.
+   digitalWrite(2,HIGH);   //2. pine 5V gönderilir.
+  }
+
+  else{                    //else if in tam tersi durumları için kullanılır.
+    digitalWrite(2,LOW);
+  }
+}
