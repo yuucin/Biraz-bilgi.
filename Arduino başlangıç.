@@ -1,0 +1,7 @@
+void setup() {
+  pinMode(2,OUTPUT); //2 numaralı pin e çıkış veriyoruz.
+}
+
+void loop() {
+  digitalWrite(2,HIGH); //2 numaralı pin e 5V gönderimi yapılıyor.
+}
