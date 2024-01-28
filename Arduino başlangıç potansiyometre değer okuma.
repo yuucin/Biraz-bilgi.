@@ -1,0 +1,10 @@
+void setup() {
+  Serial.begin(9600); //Serial.begin kısaca serial monitör ile bağlantıyı sağlar 9600 ise serial baund ile eşitlenmesini sağlar.
+  pinMode(A0,INPUT);  //Burada pinMode komutunun kullanılmasına gerek yok yalnızca daha kolay anlaşılması için koydum.
+}                     
+
+void loop() {
+  int deger = analogRead(A0); //Kısaca digitalRead komutunun yaptığı işlemleri analog elemanlar için yapıyor.
+  serial.println(deger);      //Serial.println serial monitör e yazı yazmamızı sağlıyor bu durumda A0 dan gelen veriyi yazıyor.
+  delay(300);
+}
